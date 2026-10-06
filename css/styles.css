@@ -1,0 +1,132 @@
+/* Full-viewport dark aesthetic for the Quaternion Julia demo */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000000;
+  color: #e8e8f0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+/* Top-left title badge */
+#hud {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  pointer-events: none;
+  z-index: 10;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.85);
+  user-select: none;
+}
+
+#title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #f0f0f8;
+}
+
+#subtitle {
+  margin-top: 4px;
+  font-size: 0.72rem;
+  color: #9898b0;
+  letter-spacing: 0.02em;
+}
+
+#subtitle sub,
+#subtitle sup {
+  font-size: 0.65em;
+}
+
+#fps {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+  color: #6a6a88;
+}
+
+#hint {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 10;
+  font-size: 0.68rem;
+  color: #5a5a72;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
+  user-select: none;
+  white-space: normal;
+  text-align: center;
+  max-width: min(92vw, 520px);
+  line-height: 1.35;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+/* lil-gui dark refinements */
+.lil-gui {
+  --background-color: #12121aee;
+  --widget-color: #1e1e2a;
+  --focus-color: #6c7cff;
+  --hover-color: #2a2a3a;
+  --font-family: "Segoe UI", system-ui, sans-serif;
+  --font-size: 11px;
+  --padding: 6px;
+  z-index: 20 !important;
+}
+
+.lil-gui.root {
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
+  border: 1px solid #2a2a3a;
+}
+
+@media (max-width: 600px) {
+  #title {
+    font-size: 0.9rem;
+  }
+
+  #hint {
+    font-size: 0.6rem;
+    bottom: 8px;
+    max-width: 94vw;
+    letter-spacing: 0.02em;
+  }
+
+  #hud {
+    top: 10px;
+    left: 10px;
+    max-width: calc(100vw - 20px);
+  }
+
+  #subtitle {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}

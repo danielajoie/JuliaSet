@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Quaternion Julia Set">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#e8f0ff"/>
+      <stop offset="35%" stop-color="#6c7cff"/>
+      <stop offset="70%" stop-color="#1a0a40"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </radialGradient>
+    <radialGradient id="core" cx="48%" cy="42%" r="28%">
+      <stop offset="0%" stop-color="#fff8e0"/>
+      <stop offset="45%" stop-color="#ff6bcb"/>
+      <stop offset="100%" stop-color="#6c7cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#050508"/>
+  <circle cx="32" cy="32" r="26" fill="url(#g)"/>
+  <ellipse cx="32" cy="32" rx="18" ry="10" fill="none" stroke="#7dffd4" stroke-width="1.2" opacity="0.85" transform="rotate(-25 32 32)"/>
+  <ellipse cx="32" cy="32" rx="18" ry="10" fill="none" stroke="#6c7cff" stroke-width="1.2" opacity="0.75" transform="rotate(35 32 32)"/>
+  <ellipse cx="32" cy="32" rx="18" ry="10" fill="none" stroke="#ff6bcb" stroke-width="1" opacity="0.7" transform="rotate(90 32 32)"/>
+  <circle cx="32" cy="30" r="7" fill="url(#core)"/>
+  <circle cx="32" cy="30" r="2.2" fill="#fff"/>
+</svg>
