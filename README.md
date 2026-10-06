@@ -99,7 +99,7 @@ In the **Appearance** folder:
 | **Animate color** | Cycles the model hue over time (HSV); glow/rim follow |
 | **Color speed** | How fast the color animation runs |
 
-Default look is **Neon Void** (bright neon solid on near-black).
+Default look is **Aurora Dark**. All four **Auto-scroll c** axes start on.
 
 ## Performance & quality
 

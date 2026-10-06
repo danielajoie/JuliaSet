@@ -28,10 +28,10 @@ const params = {
   ck: DEFAULT_C.w,
 
   // Per-axis auto-scroll through [C_MIN, C_MAX] (ping-pong)
-  autoCr: false,
-  autoCi: false,
-  autoCj: false,
-  autoCk: false,
+  autoCr: true,
+  autoCi: true,
+  autoCj: true,
+  autoCk: true,
   // UI speeds 0–2; actual phase rate is multiplied by AUTO_SPEED_SCALE (slow end is usable)
   autoSpeedCr: 0.35,
   autoSpeedCi: 0.35,
@@ -59,7 +59,7 @@ const params = {
   resolutionScale: Math.min(window.devicePixelRatio || 1, 2) > 1.5 ? 0.85 : 1.0,
 
   // Appearance
-  lookPreset: "Neon Void",
+  lookPreset: "Aurora Dark",
   colorScheme: "Neon",
   animateColor: false,
   colorAnimSpeed: 0.45,
