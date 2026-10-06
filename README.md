@@ -1,14 +1,22 @@
 # Quaternion Julia Set
 
-Real-time **3D Quaternion Julia set** rendered in the browser with GPU distance-estimator ray marching. The Julia parameter \(c\) morphs continuously; orbit the camera with the mouse and tweak everything from an on-screen GUI.
+Real-time **3D Quaternion Julia set** in the browser — GPU distance-estimator ray marching, continuous morphing of the Julia parameter \(c\), mouse orbit, and an on-screen GUI.
+
+**Live demo:** [https://danielajoie.github.io/JuliaSet/](https://danielajoie.github.io/JuliaSet/)
 
 \[
 q_{n+1} = q_n^2 + c,\quad q,c \in \mathbb{H}
 \]
 
-## How to run
+Free, MIT-licensed. Three.js `0.170.0` and lil-gui `0.19.2` are **vendored** (no CDN) so the demo works offline once loaded and on GitHub Pages without third-party script hosts.
 
-This project uses ES modules with **vendored** Three.js `0.170.0` and lil-gui `0.19.2` under `vendor/` (pinned; works offline / on GitHub Pages without CDN). Serve the folder over HTTP — opening `index.html` via `file://` may be blocked by the browser.
+## Try it
+
+Open the [live demo](https://danielajoie.github.io/JuliaSet/) in a modern WebGL browser (Chrome, Edge, Firefox, Safari). Drag to orbit, scroll to zoom, Space to pause morphing.
+
+## Run locally
+
+Serve the folder over HTTP — opening `index.html` via `file://` may be blocked by the browser (ES modules).
 
 ```bash
 # from this directory
